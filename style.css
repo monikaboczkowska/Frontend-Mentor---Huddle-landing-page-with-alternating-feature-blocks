@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* #############################  Top navbar Section  ################################ */
+
+.header {
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-logo {
+    width: 240px;
+    height: 39px;
+}
+.top-text {
+    padding: 10px 40px;
+    background-color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+.top-text:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+/* #############################   Banner Section  ################################ */
+
+.banner {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-left {
+    flex-basis: 500px;
+}
+.banner-title {
+    font-size: 45px;
+    line-height: 1.25;
+}
+.banner-text {
+    margin: 20px 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+}
+.banner-btn {
+    padding: 15px 40px;
+    color: white;
+    font-weight: bold;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+.banner-btn:hover {
+    background-color: hsl(322, 100%, 76%);
+}
+.banner-img {
+    width: 700px;
+}
+.banner-right-img {
+    width: 100%;
+    height: auto;
+}
+
+/* #############################   Main Section  ################################ */
+
+.container {
+    margin: 100px auto 80px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    margin-bottom: 25px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.card-2 {
+    flex-direction: row-reverse;
+}
+.card-info {
+    margin-left: 50px;
+    flex-basis: 450px;
+}
+.card-2-info {
+    margin-left: 0;
+}
+.card-title {
+    margin: 15px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.card-text {
+    line-height: 1.5;
+    color: hsl(208, 11%, 55%);
+}
+.card-img {
+    width: 250px;
+    height: auto;
+}
+.card-2-img {
+    margin-left: 50px;
+}
+.card-bottom {
+    position: relative;
+    top: 60px;
+    max-width: 700px;
+    padding: 30px;
+    margin: auto auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.card-bottom h3 {
+    margin: 20px 0 30px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.card-bottom-btn {
+    margin-bottom: 10px;
+    padding: 20px 80px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.card-bottom-btn:hover {
+    background-color: hsl(322, 100%, 76%);
+}
+
+/* ############################### Footer Section ############################# */
+
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+}
+.footer-container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 120px 0 50px;
+}
+.footer-logo {
+    filter: invert(1) grayscale(100%) brightness(2);
+}
+.footer-info {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 360px auto auto auto;
+}
+.footer-columns {
+    display: flex;
+    flex-direction: column;
+}
+.footer-columns:nth-child(n + 2) {
+    align-items: center;
+}
+.column-items {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.icon-location {
+    position: relative;
+    top: 28px;
+    align-self: flex-start;
+}
+.footer p {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+.list-item {
+    margin-bottom: 25px;
+}
+.list-item:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+.icons-size {
+    width: 15px;
+    height: 15px;
+}
+.flex-footer {
+    display: flex;
+}
+.social-icons {
+    margin-right: 15px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(193, 100%, 96%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.social-icons:hover {
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 50%;
+}
+.copyrights {
+    text-align: right;
+    font-size: 12px;
+}
+
+/* ######################### media queries section ######################### */
+
+
+/* Samsung Galaxy S5 ----------- */
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    .header {
+        padding: 25px;
+    }
+    .banner-img {
+        max-width: 100%;
+        width: auto;
+    }
+    .banner {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .banner-left {
+        flex: 1;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .top-text {
+        padding: 10px 20px;
+        background-color: white;
+        font-weight: bold;
+        border: 0;
+        border-radius: 30px;
+        box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 1s ease-out;
+    }
+    .top-logo {
+        width: 140px;
+        height: 25px;
+    }
+    .container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .card {
+        flex-direction: column-reverse;
+    }
+    .card-info {
+        margin-left: 0;
+        margin-top: 20px;
+        flex: 1;
+        text-align: center;
+    }
+    .card-bottom {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 10px 10px 20px;
+    }
+    .card-bottom h3 {
+        font-size: 16px;
+    }
+    .card-bottom-btn {
+        margin-bottom: 10px;
+        padding: 10px 50px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: hsl(322, 100%, 66%);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .footer-container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .footer-info {
+        grid-template-columns: 1fr;
+    }
+    .footer-columns:nth-child(n + 2) {
+        align-items: start;
+    }
+    .flex-footer {
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%, -50%);
+    }
+    .copyrights {
+        text-align: center;
+    }
+}
